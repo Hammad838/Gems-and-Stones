@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6=8u&0p(+pf$jg^82ycwac%7fv=do97nv*)r9wj04m$_#*bsr$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.87.26.251', 'localhost', 'gems-stones.ml', 'www.gems-stones.ml']
+ALLOWED_HOSTS = ['52.87.26.251', 'localhost', 'www.gems-stones.ml', 'gems-stones.ml']
 
 
 # Application definition

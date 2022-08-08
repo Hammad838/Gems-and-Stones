@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6=8u&0p(+pf$jg^82ycwac%7fv=do97nv*)r9wj04m$_#*bsr$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['52.87.26.251', 'localhost', 'gems-stones.ml', 'www.gems-stones.ml']
 
 
 # Application definition
@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

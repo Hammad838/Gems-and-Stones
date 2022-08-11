@@ -44,7 +44,47 @@ def search(request):
 
 
 def about(request):
-    return render(request, 'shop/about.html')
+    list = []
+    list.append({'title': 'Mission', 'desc': '''
+        "Our objectives are twofold. On the supply side, we aspire to
+          be the world's leading environmentally responsible, human
+          rights-minded, global supplier and discoverer of rare gems; to
+          bridge income disparities throughout the gem industry by
+          creating suitable working environments that will provide
+          honorable livelihoods to employees at all levels of the supply
+          chain. We aim to constantly develop and introduce new
+          technologies to the gems' mining industry by being pioneers
+          of innovation and technological advancements.
+          On the demand side, we endeavor to provide our customers
+          with the most profitable form of investment: one-of-a-kind,
+          rare, and unique gems that serve as tangible, transportable,
+          high-value assets that will always increase in value; and to
+          serve our customers with the highest standards of honesty,
+          integrity, and customer service".
+    '''})
+    list.append({'title': 'Geographical Region', 'desc': '''
+        The mountains of Gilgit-Baltistan have an abundance of gemstones, such as
+        emerald, aquamarine, peridot, spine, topaz, and garnet, among others. Gilgit. Baltistan is renowned for its assortment of colorful gemstones. Gilgit Baltistan
+        features three well-known mountain ranges, including Himalaya, Hindu Kush,
+        and Karakoram. Millions of years ago, two collisions between Asia and India
+        created these mountain ranges. These collisions cause multiple phases of rock
+        deformation. All of these geological processes created a separate mineral
+        kingdom in GB. Mines & Minerals World Pvt. LTD's geographical position is one
+        of its primary success factors, since it provides quick access to three well-known
+        mountain ranges
+    '''})
+    list.append({'title': 'Value Chain Analysis', 'desc': '''
+        The process of mining stones is the initial step in the gemstone route. There are
+          several mining places accessible worldwide. However, in Pakistan, cutters and
+          treaters are hard to come by, and only native miners are allowed to dig
+          gemstones. Since there are no cutters or treaters nearby, the local miners sell
+          their ore directly to marketers or raw dealers, who then send it to cutters in
+          cutting centers. Ninety percent of the gems produced by our firm are sent to
+          China, with the remaining ten percent going to Peshawar and other local
+          markets
+          '''})
+    params = {'list': list}
+    return render(request, 'shop/about.html', params)
 
 
 def contact(request):
